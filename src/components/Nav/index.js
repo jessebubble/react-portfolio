@@ -1,10 +1,36 @@
 import React from 'react';
 
-function Nav(){
+function Nav({ currentPage, handlePageChange}) {
     return (
-        <header>
-
-        </header>
+        <ul className='nav nav-tabs'>
+            <li className='nav-item'>
+                Jesse Hernandez
+            </li>
+            <li className='nav-item'>
+                <a 
+                href='#about'
+                onClick={() => handlePageChange('About')}
+                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
+                >About Me
+                </a>
+            </li>
+            <li className='nav-item'>
+                <a 
+                href='#projects'
+                onClick={() => handlePageChange('Projects')}
+                className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} 
+                >Projects
+                </a>
+            </li>
+            <li className='nav-item'>
+                <a 
+                href='#contact'
+                onClick={() => handlePageChange('Contact')}
+                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} 
+                >Contact
+                </a>
+            </li>
+        </ul>
     );
 }
 
