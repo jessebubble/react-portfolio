@@ -1,8 +1,10 @@
 import React from 'react';
+import Projects from '../Projects';
 import { IconButton } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { Flex, VStack, Heading, Spacer } from '@chakra-ui/layout';
-import { FaSun, FaMoon, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
+import { FaSun, FaMoon, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { GrUserWorker, GrMailOption, GrFolder } from 'react-icons/gr'
 
 function Nav() {
 
@@ -13,13 +15,27 @@ function Nav() {
         <VStack p={5}>
             <Flex w='100%'>
                 <Heading 
-                    ml='8' size='md' fontWeight='semibold' color='cyan.400'>Jesse HernandezIII
+                    ml='8' size='md' fontWeight='semibold' color='cyan.400'>
+                <IconButton icon={<GrMailOption />} isRound='true' 
+                    onClick={() =>
+                    window.open("mailto:jesseovr@gmail.com")}></IconButton>
+                <IconButton ml={2} icon={<GrFolder />} isRound='true' 
+                    onClick={() =>
+                    window.open("https://docs.google.com/document/d/1Ww0atp3OSEnqGajVBY_iBS2Ku4i8frrvE_MDf5SA0bY/edit?usp=sharing")}></IconButton>
+                <IconButton ml={2} icon={<GrUserWorker />} isRound='true' 
+                    onClick={ Projects }></IconButton>
                 </Heading>
 
                 <Spacer></Spacer>
-                <IconButton icon={<FaLinkedin />} isRound='true' onClick={toggleColorMode}></IconButton>
-                <IconButton ml={2} icon={<FaGithub />} isRound='true' onClick={toggleColorMode}></IconButton>
-                <IconButton ml={2} icon={<FaInstagram />} isRound='true' onClick={toggleColorMode}></IconButton>
+                <IconButton icon={<FaLinkedin />} isRound='true' 
+                    onClick={() =>
+                    window.open("https://www.linkedin.com/in/jessebubble/")}></IconButton>
+                <IconButton ml={2} icon={<FaGithub />} isRound='true' 
+                    onClick={() =>
+                    window.open("https://github.com/jessebubble")}></IconButton>
+                <IconButton ml={2} icon={<FaInstagram />} isRound='true' 
+                    onClick={() =>
+                    window.open("https://www.instagram.com/jessebubble/")}></IconButton>
                 <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
             </Flex>
         </VStack>

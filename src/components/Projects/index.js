@@ -7,28 +7,36 @@ function Projects() {
     return (
         <Box alignSelf='center' px='32' py='16'>
 
-        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end'>
+        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
+            onClick={() =>
+            window.open("https://jessebubble.github.io/password-generator")}>
             <Icon color='white' p='4' as={DiJsBadge} w='24' h='24' />
             <Text color='white' p='4' fontSize='xl' fontWeight='semibold'>
                 Password Generator
             </Text>
         </Flex>
 
-        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} >
+        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
+            onClick={() =>
+            window.open("https://infinite-sea-93313.herokuapp.com")}>
             <Icon color='black' p='4' as={DiNodejs} w='24' h='24' />
             <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
                 We Rate Pets
             </Text>
         </Flex>
 
-        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} >
+        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} 
+            onClick={() =>
+            window.open("https://jessebubble.github.io/weather-dashboard")}>
             <Icon color='black' p='4' as={DiJavascript1} w='24' h='24' />
             <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
                 Weather Dashboard
             </Text>
         </Flex>
 
-        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} >
+        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} 
+            onClick={() =>
+            window.open("https://jessebubble.github.io/work-day-scheduler")}>
             <Icon color='black' p='4' as={DiJavascript} w='24' h='24' />
             <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
                 Work Day Scheduler

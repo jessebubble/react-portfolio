@@ -16,9 +16,9 @@ function Header() {
                 w='300px' h='300px' alignSelf='flex-end' />
             <Flex alignSelf='flex-start'>
                 <Box align='flex-start'>
-                    <Text fontSize='5xl' fontWeight='semibold'> Thank You for stopping by</Text>
-                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>my name is Jesse HernandezIII</Text>
-                    <Text color={isDark ? 'gray.200' : 'gray.500'}>Software Engineer in training </Text>
+                    <Text fontSize='5xl' fontWeight='semibold'> Hello, my name is Jesse </Text>
+                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Software Engineer in training </Text>
+                    <Text color={isDark ? 'gray.200' : 'gray.500'}></Text>
                     <Button mt={8} colorScheme='blue' onClick={() =>
                         window.open("https://jessebubble.github.io/react-portfolio/")}>jessebubble
                     </Button>
