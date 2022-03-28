@@ -1,8 +1,47 @@
 import React from 'react';
+import Icon from '@chakra-ui/icon';
+import { Box, Flex, Text } from '@chakra-ui/layout';
+import { DiJsBadge, DiNodejs, DiJavascript1, DiJavascript } from 'react-icons/di'
 
-function Projects(){
+function Projects() {
     return (
-        <section id='work' class='work'>
+        <Box alignSelf='center' px='32' py='16'>
+
+        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end'>
+            <Icon color='white' p='4' as={DiJsBadge} w='24' h='24' />
+            <Text color='white' p='4' fontSize='xl' fontWeight='semibold'>
+                Password Generator
+            </Text>
+        </Flex>
+
+        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} >
+            <Icon color='black' p='4' as={DiNodejs} w='24' h='24' />
+            <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
+                We Rate Pets
+            </Text>
+        </Flex>
+
+        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} >
+            <Icon color='black' p='4' as={DiJavascript1} w='24' h='24' />
+            <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
+                Weather Dashboard
+            </Text>
+        </Flex>
+
+        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} >
+            <Icon color='black' p='4' as={DiJavascript} w='24' h='24' />
+            <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
+                Work Day Scheduler
+            </Text>
+        </Flex>
+
+        </Box>
+    );
+}
+    
+export default Projects;
+
+/*         <section id='work' class='work'>
             <h1>Projects</h1>
             <div class='projects'>
                 <article class='projects'>
@@ -34,8 +73,4 @@ function Projects(){
                     </div>
                 </article>
             </div>
-        </section>
-    );
-}
-
-export default Projects;
+        </section> */
