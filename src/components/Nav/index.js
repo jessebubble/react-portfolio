@@ -1,10 +1,10 @@
 import React from 'react';
-import Projects from '../Projects';
 import { IconButton } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { Flex, VStack, Heading, Spacer } from '@chakra-ui/layout';
+import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
 import { FaSun, FaMoon, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import { GrUserWorker, GrMailOption, GrFolder } from 'react-icons/gr'
+import { ImHome, ImFileText, ImEnvelop } from 'react-icons/im';
 
 function Nav() {
 
@@ -16,14 +16,28 @@ function Nav() {
             <Flex w='100%'>
                 <Heading 
                     ml='8' size='md' fontWeight='semibold' color='cyan.400'>
-                <IconButton icon={<GrMailOption />} isRound='true' 
+                <IconButton icon={<ImEnvelop />} isRound='true' 
                     onClick={() =>
                     window.open("mailto:jesseovr@gmail.com")}></IconButton>
-                <IconButton ml={2} icon={<GrFolder />} isRound='true' 
+                <IconButton ml={2} icon={<ImFileText />} isRound='true' 
                     onClick={() =>
                     window.open("https://docs.google.com/document/d/1Ww0atp3OSEnqGajVBY_iBS2Ku4i8frrvE_MDf5SA0bY/edit?usp=sharing")}></IconButton>
-                <IconButton ml={2} icon={<GrUserWorker />} isRound='true' 
-                    onClick={ Projects }></IconButton>
+                {/* <IconButton ml={2} icon={<ImHome />} isRound='true'  onClick={toggleColorMode}></IconButton> */}
+                <Menu>
+                    <MenuButton
+                        ml={2}
+                        as={IconButton}
+                        aria-label='options'
+                        icon={<ImHome />}
+                        isRound='true'
+                        />
+                    <MenuList>
+                        <MenuItem to='/about'>About</MenuItem>
+                        <MenuItem to='/projects'>Projects</MenuItem>
+                        <MenuItem >Contact</MenuItem>
+                        <MenuItem>JesseBubble</MenuItem>
+                    </MenuList>
+                </Menu>
                 </Heading>
 
                 <Spacer></Spacer>

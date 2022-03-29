@@ -1,9 +1,8 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
-import { Button } from '@chakra-ui/button';
+/* import { Button } from '@chakra-ui/button'; */
 import { Image } from '@chakra-ui/image';
 import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
-/* import { useMediaQuery } from '@chakra-ui/media-query'; */
 
 function Header() {
 
@@ -17,11 +16,11 @@ function Header() {
             <Flex alignSelf='flex-start'>
                 <Box align='flex-start'>
                     <Text fontSize='5xl' fontWeight='semibold'> Hello, my name is Jesse </Text>
-                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Software Engineer in training </Text>
+                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Software Engineer in training  </Text>
                     <Text color={isDark ? 'gray.200' : 'gray.500'}></Text>
-                    <Button mt={8} colorScheme='blue' onClick={() =>
+{/*                     <Button mt={8} colorScheme='blue' onClick={() =>
                         window.open("https://jessebubble.github.io/react-portfolio/")}>jessebubble
-                    </Button>
+                    </Button> */}
                 </Box>
 
                 <Image

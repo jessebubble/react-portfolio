@@ -9,7 +9,8 @@ function About(){
                 <Heading fontWeight='extrabold' color='cyan.500' size='4xl'>
                     Full Stack Web Developer
                 </Heading>
-                <Text fontSize='2xl' color='gray.400'>Certificate from University of Texas, San Antonio</Text>
+                <Text fontSize='2xl' color='gray.400'>Certificate 📜</Text>
+                <Text fontSize='2xl' color='gray.400'>University of Texas, San Antonio</Text>
             </Box>
             <Box alignSelf='center' px='32' py='16'>
                 <Text fontWeight='bold' fontSize='2xl'>
