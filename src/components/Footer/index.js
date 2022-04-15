@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaMusic, FaCamera, FaTwitter, FaYout
 
 function Footer() {
     return (
-        <HStack spacing='24'>
+        <HStack spacing='24' justifyContent='center'>
             <Icon as={FaLinkedin} boxSize='50' />
             <Icon as={FaGithub} boxSize='50' />
             <Icon as={FaInstagram} boxSize='50' />

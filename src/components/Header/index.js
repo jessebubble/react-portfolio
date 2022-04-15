@@ -2,7 +2,7 @@ import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
 /* import { Button } from '@chakra-ui/button'; */
 import { Image } from '@chakra-ui/image';
-import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
+import { Stack, Flex, Box, Text } from '@chakra-ui/layout';
 
 function Header() {
 
@@ -11,12 +11,10 @@ function Header() {
 
     return (
         <Stack>
-            <Circle position='absolute' bg='blue.100' opacity='0.1'
-                w='300px' h='300px' alignSelf='flex-end' />
-            <Flex alignSelf='flex-start'>
-                <Box align='flex-start'>
+            <Flex alignSelf='center'>
+                <Box align='center'>
                     <Text fontSize='5xl' fontWeight='semibold'> Hello, my name is Jesse </Text>
-                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Software Engineer in training  </Text>
+                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>Software Engineer  </Text>
                     <Text color={isDark ? 'gray.200' : 'gray.500'}></Text>
 {/*                     <Button mt={8} colorScheme='blue' onClick={() =>
                         window.open("https://jessebubble.github.io/react-portfolio/")}>jessebubble
@@ -24,7 +22,8 @@ function Header() {
                 </Box>
 
                 <Image
-                    alignSelf='center' 
+                    ml={20}
+                    objectFit='cover'
                     borderRadius='full'
                     backgroundColor='transparent' boxShadow='lg'
                     boxSize='300px' src='https://media-exp1.licdn.com/dms/image/C4E03AQFUIV-XQxTrHg/profile-displayphoto-shrink_800_800/0/1645586933825?e=1654128000&v=beta&t=4XcowoesW4_WzVoATOhJV6sYDAFy8JBQsCKhG5cl56E' />

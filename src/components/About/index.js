@@ -4,18 +4,20 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/layout';
 
 function About(){
     return (
-        <Flex w='100%' maxWidth={{ base: '100vh', md: '130vh', lg: '130vh', xl: '130vh' }}>
-            <Box alignself='center' px='32' py='16'>
-                <Heading fontWeight='extrabold' color='cyan.500' size='4xl'>
+        <Flex ml={60} w='100%' maxWidth={{ base: '100vh', md: '130vh', lg: '130vh', xl: '130vh' }}>
+            <Box alignSelf='right'  px='32' py='16' ml={20}>
+                <Heading alignSelf='center' fontWeight='extrabold' color='cyan.500' size='4xl'>
                     Full Stack Web Developer
                 </Heading>
                 <Text fontSize='2xl' color='gray.400'>Certificate 📜</Text>
                 <Text fontSize='2xl' color='gray.400'>University of Texas, San Antonio</Text>
             </Box>
             <Box alignSelf='center' px='32' py='16'>
-                <Text fontWeight='bold' fontSize='2xl'>
-                Software Engineer with strong interpersonal and communication skills. <br></br>
+                <Text as='abbr' fontWeight='bold' fontSize='20px' color='teal'>
+                Strong interpersonal and communication skills. <br></br>
+                <br></br>
                 Working in the highly regulated world of insurance taught me how to adapt in a changing professional environment. <br></br>
+                <br></br>
                 Looking forward to learning and growing with my new team of Software Engineers.
                 </Text>
             </Box>

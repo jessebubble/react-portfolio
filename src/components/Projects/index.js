@@ -1,49 +1,62 @@
 import React from 'react';
 import Icon from '@chakra-ui/icon';
-import { Box, Flex, Text } from '@chakra-ui/layout';
-import { DiJsBadge, DiNodejs, DiJavascript1, DiJavascript } from 'react-icons/di'
+import {Text } from '@chakra-ui/layout';
+import { Wrap, WrapItem } from '@chakra-ui/react'
+import { DiJsBadge, DiJavascript1, DiJavascript, DiReact } from 'react-icons/di'
 
 function Projects() {
     return (
-        <Box alignSelf='center' px='32' py='16'>
-
-        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
+        <Wrap ml={80}>
+            <WrapItem
+            rounded='xl' direction='column' mt={4} bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
             onClick={() =>
-            window.open("https://jessebubble.github.io/password-generator")}>
+                window.open("https://jam-group-project.herokuapp.com/")}>
+            <Icon color='black' p='4' as={DiReact} w='24' h='24' />
+            <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
+                Parachute Play 🪂
+            </Text>
+            </WrapItem>
+            <WrapItem
+            rounded='xl' direction='column' mt={4} bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
+            onClick={() =>
+                window.open("https://jessebubble.github.io/password-generator")}>
             <Icon color='white' p='4' as={DiJsBadge} w='24' h='24' />
             <Text color='white' p='4' fontSize='xl' fontWeight='semibold'>
-                Password Generator
+                Password Generator 🔑
             </Text>
-        </Flex>
+            </WrapItem>
 
-        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
+            {/* <WrapItem
+            rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
             onClick={() =>
             window.open("https://infinite-sea-93313.herokuapp.com")}>
             <Icon color='black' p='4' as={DiNodejs} w='24' h='24' />
             <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
                 We Rate Pets
             </Text>
-        </Flex>
+            </WrapItem> */}
 
-        <Flex rounded='xl' direction='column' mt={4} bg='gray.100' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} 
+            <WrapItem
+            rounded='xl' direction='column' mt={4} bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} 
             onClick={() =>
-            window.open("https://jessebubble.github.io/weather-dashboard")}>
+                window.open("https://jessebubble.github.io/weather-dashboard")}>
             <Icon color='black' p='4' as={DiJavascript1} w='24' h='24' />
             <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
-                Weather Dashboard
+                Weather Dashboard 🌧️
             </Text>
-        </Flex>
+            </WrapItem>
 
-        <Flex rounded='xl' direction='column' mt={4} bg='blue.400' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} 
+            <WrapItem
+            rounded='xl' direction='column' mt={4} bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='30vh' w='30vh' justify='flex-end' _hover={{ bg: 'green.400', }} 
             onClick={() =>
-            window.open("https://jessebubble.github.io/work-day-scheduler")}>
-            <Icon color='black' p='4' as={DiJavascript} w='24' h='24' />
-            <Text color='black' p='4' fontSize='xl' fontWeight='semibold'>
-                Work Day Scheduler
+                window.open("https://jessebubble.github.io/work-day-scheduler")}>
+            <Icon color='white' p='4' as={DiJavascript} w='24' h='24' />
+            <Text color='white' p='4' fontSize='xl' fontWeight='semibold'>
+                Work Day Scheduler 📅
             </Text>
-        </Flex>
+            </WrapItem>
+        </Wrap>
 
-        </Box>
     );
 }
     
