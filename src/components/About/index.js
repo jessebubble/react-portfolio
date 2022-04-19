@@ -142,7 +142,7 @@ function About() {
           fontWeight={'bold'}
           fontSize={20}
           textTransform={'uppercase'}
-          color={'cyan.500'}>
+          color={'cyan.600'}>
           Welcome to my portfolio
         </chakra.h3>
         <chakra.h1
@@ -153,18 +153,15 @@ function About() {
           color={useColorModeValue('gray.700', 'gray.50')}>
           Jesse Hernandez
         </chakra.h1>
-        {/* <chakra.h2
+        <chakra.h2
           margin={'auto'}
           width={'70%'}
           fontFamily={'Inter'}
           fontWeight={'medium'}
-          color={useColorModeValue('gray.500', 'gray.400')}>
-          See why over{' '}
-          <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
-            150,000+
-          </chakra.strong>{' '}
-          influencers use EEZY to manage their social media content!
-        </chakra.h2> */}
+          color={useColorModeValue('cyan.600', 'cyan.600')}>
+          Who is Jesse? <br></br>
+          Let's find out what Jesse has to say 😀
+        </chakra.h2>
       </Box>
       <SimpleGrid
         columns={{ base: 1, xl: 2 }}
