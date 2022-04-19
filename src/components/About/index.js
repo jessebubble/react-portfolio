@@ -1,38 +1,47 @@
 import React from 'react';
-import { Box, Flex, Heading, Text } from '@chakra-ui/layout';
-
+import { Avatar, Box, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 
 function About(){
     return (
-        <Flex ml={60} w='100%' maxWidth={{ base: '100vh', md: '130vh', lg: '130vh', xl: '130vh' }}>
-            <Box alignSelf='right'  px='32' py='16' ml={20}>
-                <Heading alignSelf='center' fontWeight='extrabold' color='cyan.500' size='4xl'>
-                    Full Stack Web Developer
-                </Heading>
-                <Text fontSize='2xl' color='gray.400'>Certificate 📜</Text>
-                <Text fontSize='2xl' color='gray.400'>University of Texas, San Antonio</Text>
-            </Box>
-            <Box alignSelf='center' px='32' py='16'>
-                <Text as='abbr' fontWeight='bold' fontSize='20px' color='teal'>
-                Strong interpersonal and communication skills. <br></br>
-                <br></br>
-                Working in the highly regulated world of insurance taught me how to adapt in a changing professional environment. <br></br>
-                <br></br>
-                Looking forward to learning and growing with my new team of Software Engineers.
-                </Text>
-            </Box>
-        </Flex>
+        <Stack
+        py={16}
+        px={8}
+        spacing={{ base: 8, md: 10 }}
+        align={'center'}
+        direction={'column'}>
+        <Text
+          fontWeight='semibold'
+          fontSize={{ base: 'xl', md: '2xl' }}
+          textAlign={'center'}
+          maxW={'3xl'}>
+              An innovative problem-solver with strong interpersonal and communication skills.
+              <br></br>
+              <br></br>
+              Current focus is on mobile-first design and development.
+              <br></br>
+              <br></br>
+              Holds a Full Stack Web Development certificate from the University of Texas, San Antonio. 
+              <br></br>
+              <br></br>
+              Excited to leverage my skills as part of a fast-paced, quality-driven team.
 
-
+        </Text>
+        <Box textAlign={'center'}>
+          <Avatar 
+            src={
+              'https://avatars.githubusercontent.com/u/92760924?v=4'
+            }
+            alt={'profile pic Jesse'}
+            mb={2}
+          />
+  
+          <Text fontWeight={600}>Jesse Hernandez</Text>
+          <Text fontWeight='semibold' fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.600')}>
+            Web Developer
+          </Text>
+        </Box>
+      </Stack>
     );
-}
+  }
     
 export default About;
-
-/*         <section id='about-me' class='about-me'>
-            <div class='block-header'><h2>About Me</h2></div>
-            <div><img src={require(`../../assets/images/profilepic.jpeg`)} alt="" /></div>
-            <div class='block-info about-me-info'>
-                <p>Software Engineer in Training</p>
-            </div>
-        </section> */
