@@ -6,7 +6,7 @@ import { DiJsBadge, DiJavascript1, DiJavascript, DiReact, DiDatabase } from 'rea
 
 function Projects() {
     return (
-        <Wrap m={10} justify='center'>
+        <Wrap m={20} justify='center'>
             <WrapItem
             rounded='xl' direction='column' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='60vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
             onClick={() =>
@@ -91,7 +91,7 @@ function Projects() {
             <Icon color='red.300' p='1' as={DiDatabase} w='24' h='24' />
             <Text color='gray.800' p='4' fontSize='xl' fontWeight='bold'>
                 Application In <br></br> 
-                Development 🪄                 
+                Development 🔮                 
             </Text>
             <Image 
             borderRadius='full'
@@ -104,7 +104,7 @@ function Projects() {
             alt='construction workers'
             />
             </WrapItem>
-            <WrapItem
+            {/* <WrapItem
             rounded='xl' direction='column' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='60vh' w='30vh'  justify='flex-end' _hover={{ bg: 'teal.400', }} 
             onClick={() =>
             window.open("")}>
@@ -123,7 +123,7 @@ function Projects() {
             src='https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80' 
             alt='construction hat'
             />
-            </WrapItem>
+            </WrapItem> */}
         </Wrap>
 
     );
