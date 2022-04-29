@@ -2,11 +2,31 @@ import React from 'react';
 import Icon from '@chakra-ui/icon';
 import {Text } from '@chakra-ui/layout';
 import { Image, Wrap, WrapItem } from '@chakra-ui/react'
-import { DiJsBadge, DiJavascript1, DiJavascript, DiReact, DiDatabase } from 'react-icons/di'
+import { DiJsBadge, DiJavascript1, DiReact, DiDatabase, DiCodeigniter } from 'react-icons/di'
 
 function Projects() {
     return (
         <Wrap m={20} justify='center'>
+            <WrapItem
+            rounded='xl' direction='column' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='60vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
+            onClick={() =>
+                window.open("https://pwa-memory-game.web.app")}>
+            <Icon color='green.300' p='1' as={DiCodeigniter} w='24' h='24' />
+            <Text color='gray.800' p='4' fontSize='xl' fontWeight='bold'>
+                Memory <br></br>
+                Game 🪩
+            </Text>
+            <Image 
+            borderRadius='full'
+            boxSize='200px'
+            objectFit='cover'
+            position='absolute'
+            alignSelf='end'
+            m={10}
+            src='https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80' 
+            alt='light bulb'
+            />
+            </WrapItem>
             <WrapItem
             rounded='xl' direction='column' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='60vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
             onClick={() =>
@@ -63,25 +83,6 @@ function Projects() {
             m={10}
             src='https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1519&q=80' 
             alt='nature trail'
-            />
-            </WrapItem>
-            <WrapItem
-            rounded='xl' direction='column' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' h='60vh' w='30vh' justify='flex-end' _hover={{ bg: 'teal.400', }} 
-            onClick={() =>
-                window.open("https://jessebubble.github.io/work-day-scheduler")}>
-            <Icon color='green.300' p='1' as={DiJavascript} w='24' h='24' />
-            <Text color='gray.800' p='4' fontSize='xl' fontWeight='bold'>
-                Work Day Scheduler 🗓️
-            </Text>
-            <Image 
-            borderRadius='full'
-            boxSize='200px'
-            objectFit='cover'
-            position='absolute'
-            alignSelf='end'
-            m={10}
-            src='https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80' 
-            alt='light bulb'
             />
             </WrapItem>
             <WrapItem
