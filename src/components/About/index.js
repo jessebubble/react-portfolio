@@ -28,7 +28,7 @@ const testimonials = [
     /* name: 'Jesse H',
     role: 'iOS Developer', */
     content:
-      "Current focus is on mobile-first design and iOS development with SwiftUI ",
+      "Dedicated to teamwork and flexible collaboration with foundational knowledge of agile software development principles. ",
     avatar:
       'https://images.unsplash.com/photo-1519400197429-404ae1a1e184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
   },
@@ -36,7 +36,7 @@ const testimonials = [
     /* name: 'JesseBubble',
     role: 'Freelance', */
     content:
-      'Excited to leverage my skills as part of a fast-paced, quality-driven team',
+      "Always learning Javascript, currently learning Flutter, Firebase and React",
     avatar:
     'https://images.unsplash.com/photo-1523910088385-d313124c68aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
   },
@@ -142,7 +142,7 @@ function About() {
           fontSize={20}
           textTransform={'uppercase'}
           color={'cyan.600'}>
-          Welcome to my portfolio
+          Welcome To My Portfolio
         </chakra.h3>
         <chakra.h1
           py={5}
@@ -150,8 +150,8 @@ function About() {
           fontFamily={'Work Sans'}
           fontWeight={'bold'}
           color={useColorModeValue('gray.700', 'gray.50')}>
-          🤹‍♂️ <br></br>
-          Jesse Hernandez
+            MongoDB || ExpressJS || ReactJS || NodeJS
+            
         </chakra.h1>
         <chakra.h2
           margin={'auto'}

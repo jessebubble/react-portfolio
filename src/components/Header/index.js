@@ -1,20 +1,28 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { Stack, Flex, Box, Text } from '@chakra-ui/layout';
+import { Button, Collapse, useDisclosure } from '@chakra-ui/react';
 
 function Header() {
 
     const { colorMode } = useColorMode();
     const isDark = colorMode === 'dark';
 
+    const { isOpen, onToggle } = useDisclosure()
+
     return (
         <Stack>
             <Flex alignSelf='center'>
-                <Box align='center'>
-                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>🫧 Hello World! 🫧</Text>
-                    <Text fontSize='7xl' fontWeight='bold' bgGradient='linear(to-r, cyan.400, blue.500, purple.600)' bgClip='text'>MongoDB || ExpressJS || ReactJS || NodeJS</Text>
+                <Button bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' variant='ghost' onClick={onToggle}>Hello World</Button>
+                <Collapse in={isOpen} animateOpacity>
+                    <Box align='center' mt='4'>
+                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>From the world of selling and servicing PNC insurance </Text>
+                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>To holding a Full Stack Web Development certificate from UTSA </Text>
+                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>I’m excited to leverage my skills as part of a fast-paced, quality-driven team.</Text>
+                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>My name Jesse Hernandez </Text>
                     <Text color={isDark ? 'gray.200' : 'gray.500'}></Text>
-                </Box>
+                    </Box>
+                </Collapse>
             </Flex>
         </Stack>
 
