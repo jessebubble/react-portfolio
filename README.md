@@ -1,6 +1,9 @@
 # React Portfolio
 * [View My Portfolio](https://jessebubble.github.io/react-portfolio/)
 
+<img width="1440" alt="Screen Shot 2022-05-16 at 11 11 26 AM" src="https://user-images.githubusercontent.com/92760924/168637590-ad4d2d78-584d-4cc3-8df9-8608ea0e0313.png">
+
+
 ## Description
 - Use `Create React App` 
 - Your portfolio should include the following:
@@ -16,4 +19,4 @@
 * [7 ways to deal with CSS](https://youtu.be/ouncVBiye_M)
 
 ## Sample
-![screenshot](./src/assets/images/react-screen-shot.png)
+<img width="1440" alt="Screen Shot 2022-05-16 at 11 13 16 AM" src="https://user-images.githubusercontent.com/92760924/168637663-b3024f78-5e7f-49e6-819e-44685eef7036.png">
