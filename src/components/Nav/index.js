@@ -56,11 +56,15 @@ function Nav() {
                             window.open("mailto:jesseovr@gmail.com")}
                             >Email
                         </MenuItem>
-                        <MenuItem>
-                            Projects
+                        <MenuItem
+                        onClick={() =>
+                            window.open("https://github.com/jessebubble")}
+                            >Projects
                         </MenuItem>
-                        <MenuItem>
-                            Contact
+                        <MenuItem
+                        onClick={() =>
+                            window.open("https://www.instagram.com/jessebubble")}
+                        >Who is Jesse
                         </MenuItem>
                     </MenuList>
                 </Menu>
