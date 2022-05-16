@@ -2,7 +2,7 @@ import React from 'react';
 import { IconButton } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { Flex, VStack, Heading, Spacer } from '@chakra-ui/layout';
-import { FaSun, FaMoon, FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaAngleDoubleDown } from 'react-icons/fa';
+import { FaSun, FaMoon, FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaSortAlphaDown } from 'react-icons/fa';
 import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 
 function Nav() {
@@ -41,7 +41,7 @@ function Nav() {
                     <MenuButton
                         as={IconButton}
                         aria-label='Options'
-                        icon={<FaAngleDoubleDown />}
+                        icon={<FaSortAlphaDown />}
                         variant='outline'
                         isRound='true'
                         color='green.300'
