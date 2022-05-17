@@ -124,4 +124,12 @@ a {
     height: 125px;
     border-radius: 12.75rem;
     box-shadow: 0 0 3rem rgb(0, 0, 0);
-} 
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.logo-avatar:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}

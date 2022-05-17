@@ -6,8 +6,8 @@ function Projects() {
         <section className="card-list">
             <div className="card">
                 <div className="card-header">
-                    <p>ReactJS + Firebase + CSS</p>
                     <h2>Memory Game 💡</h2>
+                    <p>PWA card game built w/ ReactJS <br></br>CSS and hosted on Firebase</p>
                 </div>
 
                 <div className="card-logo">
@@ -24,8 +24,9 @@ function Projects() {
             </div>
             <div className="card">
                 <div className="card-header">
-                    <p>MongoDB + Express + React + Node</p>
                     <h2>Parachute Play 🪂</h2>
+                    <p>Full Stack Word Game built using <br></br>the MERN Stack</p>
+                    
                 </div>
 
                 <div className="card-logo">
@@ -42,8 +43,8 @@ function Projects() {
             </div>
             <div className="card">
                 <div className="card-header">
-                    <p>HTML5 + CSS3 + Javascript</p>
                     <h2>Weather Dashboard 🌧️</h2>
+                    <p>OpenWeather API app built w/ <br></br>HTML5 + CSS3 + Javascript</p>
                 </div>
 
                 <div className="card-logo">
@@ -60,8 +61,8 @@ function Projects() {
             </div>
             <div className="card">
                 <div className="card-header">
-                    <p>HTML5 + CSS3 + Javascript</p>
                     <h2>Password Generator 🔑</h2>
+                    <p>Javascript Project built w/ <br></br>HTML5 + CSS3 </p>
                 </div>
 
                 <div className="card-logo">
@@ -78,8 +79,8 @@ function Projects() {
             </div>
             <div className="card">
                 <div className="card-header">
-                    <p>Coming Soon</p>
                     <h2>Animal Farm 🦥</h2>
+                    <p>Coming Soon <br></br>Full Stack w/ ReactJS + NodeJS </p>
                 </div>
 
                 <div className="card-logo">
@@ -97,8 +98,8 @@ function Projects() {
 
             <div className="card">
                 <div className="card-header">
-                    <p>Coming Soon</p>
                     <h2>Stripe Payments 💳</h2>
+                    <p>Coming Soon <br></br>Full Stack w/ ReactJS + NodeJS </p>
                 </div>
 
                 <div className="card-logo">
