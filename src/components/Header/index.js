@@ -17,7 +17,7 @@ function Header() {
                 <Button bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' variant='ghost' onClick={onToggle}>Hello World</Button>
                 <Collapse in={isOpen} animateOpacity>
                     <Box align='center' mt='4'>
-                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>From the world of selling and servicing PNC insurance </Text>
+                    <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>From the world of selling Property and Casualty insurance </Text>
                     <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>To holding a Full Stack Web Development certificate from UTSA </Text>
                     <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>I’m excited to leverage my skills as part of a fast-paced, quality-driven team.</Text>
                     <Text fontSize='5xl' fontWeight='semibold' bgGradient='linear(to-l, cyan.400, blue.500, purple.600)' bgClip='text'>My name Jesse Hernandez </Text>

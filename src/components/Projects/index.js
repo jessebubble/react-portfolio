@@ -6,8 +6,28 @@ function Projects() {
         <section className="card-list">
             <div className="card">
                 <div className="card-header">
+                    <h2>Inside the Bubble - Blog</h2>
+                    <p>Full Stack blog built w/ NextJS <br></br>FireBase hosed on Vercel </p>
+                </div>
+
+                <div className="card-logo">
+                    <a className="logo-avatar" href="https://inside-the-bubble.vercel.app">
+                        <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="project" />
+                    </a>
+                </div>
+
+                <div className="card-github">
+                    <a className="github-avatar" href="https://github.com/jessebubble/inside-the-bubble">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github"/>
+                    </a>
+                </div>
+            </div>
+
+
+            <div className="card">
+                <div className="card-header">
                     <h2>Animal Farm 🦥</h2>
-                    <p>Full Stack ReactJS built<br></br>with NodeJS and ChanceJS</p>
+                    <p>Full Stack instant search app<br></br>built with ReactJS and NodeJS</p>
                 </div>
                 <div className="card-logo">
                     <a className="logo-avatar" href="https://jessebubble-animal-farm.netlify.app">
@@ -24,7 +44,7 @@ function Projects() {
             <div className="card">
                 <div className="card-header">
                     <h2>Memory Game 💡</h2>
-                    <p>PWA card game built w/ ReactJS <br></br>CSS and hosted on Firebase</p>
+                    <p>Developer themed card game<br></br>built w/ React, CSS and FireBase</p>
                 </div>
                 <div className="card-logo">
                     <a className="logo-avatar" href="https://jessebubbleproject.web.app/">
@@ -41,7 +61,7 @@ function Projects() {
             <div className="card">
                 <div className="card-header">
                     <h2>Parachute Play 🪂</h2>
-                    <p>Full Stack Word Game built using <br></br>the MERN Stack</p>
+                    <p>Full Stack Word Game built w/ <br></br>the MERN Tech Stack</p>
                 </div>
                 <div className="card-logo">
                     <a className="logo-avatar" href="https://jam-group-project.herokuapp.com/">
@@ -88,27 +108,6 @@ function Projects() {
                     </a>
                 </div>
             </div>
-            
-            <div className="card">
-                <div className="card-header">
-                    <h2>Stripe Payments 💳</h2>
-                    <p>Coming Soon <br></br>Full Stack w/ ReactJS + NodeJS </p>
-                </div>
-
-                <div className="card-logo">
-                    <a className="logo-avatar" href="https://github.com/jessebubble/stripe-payments">
-                        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGF5bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="project" />
-                    </a>
-                </div>
-
-                <div className="card-github">
-                    <a className="github-avatar" href="https://github.com/jessebubble/stripe-payments">
-                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github"/>
-                    </a>
-                </div>
-            </div>
-
-
         </section>
     );
 }
